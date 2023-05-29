@@ -1,33 +1,20 @@
+import generators
+import schmidts
+import timeInfo
+import networkx as nx
+import matplotlib.pyplot as plt
+"""
 # Investigate algorithms time efficiency with different graph sizes. Export results to csv
-def timeEfficiency(N, edge_probability, delta, numberOfTests, graphGenerator=generators.generateConnected):
-    data = []
-    investigationTime = datetime.now()
-    lastUpdate = datetime.now()
-    for n in range(1, N, delta):
-        sum = 0
-        numberOfEarsPerBlock = 0
-        numberOfBlocks = 0
-        for i in range(numberOfTests):
-            G = graphGenerator(n, edge_probability)
-            start = datetime.now()
-            earDec = generators.earDecomposition(G)
-            end = datetime.now()
-            time = end - start
-            numberOfBlocks += len(earDec)
-            for block in earDec:
-                numberOfEarsPerBlock += len(block)
-            sum += time.total_seconds()
-        data.append({'n': n, 'blocks': numberOfBlocks / numberOfTests,
-                    'ears per block': numberOfEarsPerBlock / numberOfTests, 'time': sum / numberOfTests})
-        print("Completed: ", n, " out of ", N, " Time lapsed: ",
-              (datetime.now() - investigationTime).total_seconds(), "s", " Last update: ", (datetime.now() - lastUpdate).total_seconds(), "s")
-        lastUpdate = datetime.now()
-    pd.DataFrame(data).to_csv(getPath(
-        'deltaN-' + str(datetime.now().strftime("%Y%m%d%H%M%S")) + '.csv'), index=False)
-
+graphSizeAnalysis = timeInfo.withTimeInfo(schmidts.earDecomposition)
+connectedGraphGenerator = generators.ensureConnectivity(nx.erdos_renyi_graph)
+options = timeInfo.TimeInfoOptions(1, 200, 1, 100, "differentSizes", lambda N, p: [connectedGraphGenerator(N, p)])
+graphSizeAnalysis(options, 0.2)
+"""
 # Investigate algorithms time efficiency with different edge probabilities. Export results to csv
-
-
+graphDensityAnalysis = timeInfo.withTimeInfo(schmidts.earDecomposition)
+options = timeInfo.TimeInfoOptions(0, 1, 0.01, 100, "differentDensity", lambda p, N: [nx.erdos_renyi_graph(N, p)])
+graphDensityAnalysis(options, 75)
+"""
 def timeEfficiencyEdgeProb(N, delta, numberOfTests, graphGenerator=generators.generateConnected):
     data = []
     investigationTime = datetime.now()
@@ -107,3 +94,4 @@ def differentGraphAnalysis(N, numberOfTests):
         lastUpdate = datetime.now()
     pd.DataFrame(data).to_csv(getPath(
         'whele-' + str(datetime.now().strftime("%Y%m%d%H%M%S")) + '.csv'), index=False)
+"""

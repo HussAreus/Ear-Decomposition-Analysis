@@ -66,7 +66,7 @@ def withTimeInfo(func: Callable):
                 for n in range(i+1, len(options.coeficient)):
                     timeLeft += totalTime * currentGrowth
                     currentGrowth *= averageGrowth
-                print(f"Time left: {str(timedelta(seconds=timeLeft))} seconds")
+                print(f"Time left: " + (str(timedelta(seconds=timeLeft)) if timeLeft < 1e14 else "Too long"))
 
             print(
                 f"Time elapsed: {str(timedelta(seconds=(time.perf_counter_ns() - investigationStart)/1e9))} seconds")
