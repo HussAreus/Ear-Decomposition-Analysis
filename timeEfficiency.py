@@ -1,55 +1,5 @@
-import algoritmai
-import matplotlib.pyplot as plt
-import networkx as nx
-import pandas as pd
-from datetime import datetime, timedelta
-import os
-
-# Graph config
-nodes = 'abcdef'
-edge_probability = 0.2
-
-# Display config
-layout = nx.spring_layout
-font_color = "white"
-width = 5
-font_size = 20
-node_size = 700
-font_weight = "bold"
-
-# Paths
-file_dir = os.path.dirname(os.path.abspath(__file__))
-csv_folder = 'data'
-
-
-def getPath(filename):
-    return os.path.join(file_dir, csv_folder, filename)
-
-
-# Generate graph
-def displayDemo(G):
-    print(nx.adjacency_matrix(G))
-    pos = layout(G)
-
-    # Display DFS of a graph
-    dfs, dfsArray = algoritmai.dfs(G, list(G.nodes)[0])
-    print("DFS:", dfsArray)
-    nx.draw(dfs, pos=pos, with_labels=True, font_color=font_color, node_color="black",
-            width=width, font_size=font_size, node_size=node_size, font_weight=font_weight)
-    plt.show()
-
-    # Print ear decomposition of a graph
-    earDec = algoritmai.earDecomposition(G)
-    print("Ear Decomposition: ", earDec)
-
-    # Display graph
-    nx.draw(G, pos=pos, with_labels=True, font_color=font_color, node_color="black",
-            width=width, font_size=font_size, node_size=node_size, font_weight=font_weight)
-    plt.show()
-
-
 # Investigate algorithms time efficiency with different graph sizes. Export results to csv
-def timeEfficiency(N, edge_probability, delta, numberOfTests, graphGenerator=algoritmai.generateConnected):
+def timeEfficiency(N, edge_probability, delta, numberOfTests, graphGenerator=generators.generateConnected):
     data = []
     investigationTime = datetime.now()
     lastUpdate = datetime.now()
@@ -60,7 +10,7 @@ def timeEfficiency(N, edge_probability, delta, numberOfTests, graphGenerator=alg
         for i in range(numberOfTests):
             G = graphGenerator(n, edge_probability)
             start = datetime.now()
-            earDec = algoritmai.earDecomposition(G)
+            earDec = generators.earDecomposition(G)
             end = datetime.now()
             time = end - start
             numberOfBlocks += len(earDec)
@@ -75,9 +25,10 @@ def timeEfficiency(N, edge_probability, delta, numberOfTests, graphGenerator=alg
     pd.DataFrame(data).to_csv(getPath(
         'deltaN-' + str(datetime.now().strftime("%Y%m%d%H%M%S")) + '.csv'), index=False)
 
-
 # Investigate algorithms time efficiency with different edge probabilities. Export results to csv
-def timeEfficiencyEdgeProb(N, delta, numberOfTests, graphGenerator=algoritmai.generateConnected):
+
+
+def timeEfficiencyEdgeProb(N, delta, numberOfTests, graphGenerator=generators.generateConnected):
     data = []
     investigationTime = datetime.now()
     lastUpdate = datetime.now()
@@ -97,7 +48,7 @@ def timeEfficiencyEdgeProb(N, delta, numberOfTests, graphGenerator=algoritmai.ge
         for i in range(numberOfTests):
             G = graphGenerator(N, p)
             start = datetime.now()
-            earDec = algoritmai.earDecomposition(G)
+            earDec = generators.earDecomposition(G)
             end = datetime.now()
             time = end - start
             numberOfBlocks += len(earDec)
@@ -142,7 +93,7 @@ def differentGraphAnalysis(N, numberOfTests):
         for i in range(numberOfTests):
             G = nx.generators.grid_2d_graph(n, n)
             start = datetime.now()
-            earDec = algoritmai.earDecomposition(G)
+            earDec = generators.earDecomposition(G)
             end = datetime.now()
             time = end - start
             numberOfBlocks += len(earDec)
@@ -156,17 +107,3 @@ def differentGraphAnalysis(N, numberOfTests):
         lastUpdate = datetime.now()
     pd.DataFrame(data).to_csv(getPath(
         'whele-' + str(datetime.now().strftime("%Y%m%d%H%M%S")) + '.csv'), index=False)
-
-
-#differentGraphAnalysis(100, 10)
-#
-
-earDecompositionTest = algoritmai.withTimeInfo(algoritmai.earDecomposition)
-def random_regular_graph(n, d):
-    return nx.random_regular_graph(d, n)
-earDecompositionTest(200, 50, 2, nx.erdos_renyi_graph, "erdos", 0, 0.2)
-
-def biconnected_components(G):
-    return list(nx.biconnected_components(G))
-biconnectedTest = algoritmai.withTimeInfo(biconnected_components)
-biconnectedTest(200, 50, 2, nx.erdos_renyi_graph, "erdos_nx", 0, 0.2)
