@@ -8,7 +8,7 @@ import random
 import os
 
 # Graph config
-nodes = 'abcdefghijklmnoprstuvz' # length - 22
+nodes = 'abcdefghijklmnoprstuvz'  # length - 22
 edge_probability = 0.2
 
 # Display config
@@ -26,6 +26,8 @@ csv_folder = 'data'
 ######## Utils ########
 
 # Return path to a file
+
+
 def getPath(filename):
     return os.path.join(file_dir, csv_folder, filename)
 
@@ -79,3 +81,41 @@ def displayDemo(G):
     nx.draw(G, pos=pos, edge_color=colors, with_labels=True, font_color=font_color,
             width=width, font_size=font_size, node_size=node_size, font_weight=font_weight)
     plt.show()
+
+
+# Plot CSV data
+def plotCSV(filename: str, title: str, xLabel="Coeficient", yLabel="Time (s)", xColumn="coef", yColumn="time", convertY=lambda y: y):
+    df = pd.read_csv(getPath(filename))
+    plt.plot(df[xColumn], [convertY(i) for i in df[yColumn]], label=title)
+    plt.xlabel(xLabel)
+    plt.ylabel(yLabel)
+    plt.title(title)
+    plt.legend()
+    plt.show()
+
+# Plot JSON data
+
+
+def plotJSON(filename: str, title: str, xLabel="Coeficient", yLabel="Time (s)", xColumn="coef", yColumn="time", convertY=lambda y: y):
+    df = pd.read_json(getPath(filename))
+    plt.plot(df[xColumn], [convertY(i) for i in df[yColumn]], label=title)
+    plt.xlabel(xLabel)
+    plt.ylabel(yLabel)
+    plt.title(title)
+    plt.legend()
+    plt.show()
+
+
+def displayBasicDiagrams(filename, xLabel, titlePrefix="", grouped=False):
+    plotJSON(filename, titlePrefix + " (Time)", xLabel=xLabel,
+             yColumn=("timePerTest" if grouped else "time"))
+    plotJSON(filename, titlePrefix + " (Blocks in graph)", xLabel=xLabel,
+             yLabel="Number of Blocks", yColumn="result", convertY=lambda y: y["avgNumberOfBlocks"])
+    plotJSON(filename, titlePrefix + " (Ears per Block)", xLabel=xLabel,
+             yLabel="Number of Ears", yColumn="result", convertY=lambda y: y["avgEarsPerBlock"])
+    plotJSON(filename, titlePrefix + " (Average Ear Size)", xLabel=xLabel,
+             yLabel="Ear size (nodes)", yColumn="result", convertY=lambda y: y["avgEarSize"])
+    plotJSON(filename, titlePrefix + " (Max Block Size)", xLabel=xLabel,
+             yLabel="Block size (ears)", yColumn="result", convertY=lambda y: y["maxBlock"])
+    plotJSON(filename, titlePrefix + " (Max Ear Size)", xLabel=xLabel,
+             yLabel="Ear size (nodes)", yColumn="result", convertY=lambda y: y["maxEar"])

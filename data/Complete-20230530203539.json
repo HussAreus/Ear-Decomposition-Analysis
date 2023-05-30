@@ -1,0 +1,1102 @@
+[
+    {
+        "coef": 1,
+        "result": {
+            "avgNumberOfBlocks": 0,
+            "avgEarsPerBlock": 0,
+            "avgEarSize": 0,
+            "maxBlock": 0,
+            "maxEar": 0
+        },
+        "timePerTest": 0.000018417
+    },
+    {
+        "coef": 2,
+        "result": {
+            "avgNumberOfBlocks": 0,
+            "avgEarsPerBlock": 0,
+            "avgEarSize": 0,
+            "maxBlock": 0,
+            "maxEar": 0
+        },
+        "timePerTest": 0.000046115
+    },
+    {
+        "coef": 3,
+        "result": {
+            "avgNumberOfBlocks": 1.0,
+            "avgEarsPerBlock": 1.0,
+            "avgEarSize": 4.0,
+            "maxBlock": 1,
+            "maxEar": 3
+        },
+        "timePerTest": 0.000052608
+    },
+    {
+        "coef": 4,
+        "result": {
+            "avgNumberOfBlocks": 1.0,
+            "avgEarsPerBlock": 3.0,
+            "avgEarSize": 3.0,
+            "maxBlock": 3,
+            "maxEar": 3
+        },
+        "timePerTest": 0.000066156
+    },
+    {
+        "coef": 5,
+        "result": {
+            "avgNumberOfBlocks": 1.0,
+            "avgEarsPerBlock": 6.0,
+            "avgEarSize": 2.6666666667,
+            "maxBlock": 6,
+            "maxEar": 3
+        },
+        "timePerTest": 0.000078023
+    },
+    {
+        "coef": 6,
+        "result": {
+            "avgNumberOfBlocks": 1.0,
+            "avgEarsPerBlock": 10.0,
+            "avgEarSize": 2.5,
+            "maxBlock": 10,
+            "maxEar": 3
+        },
+        "timePerTest": 0.000097839
+    },
+    {
+        "coef": 7,
+        "result": {
+            "avgNumberOfBlocks": 1.0,
+            "avgEarsPerBlock": 15.0,
+            "avgEarSize": 2.4,
+            "maxBlock": 15,
+            "maxEar": 3
+        },
+        "timePerTest": 0.000142219
+    },
+    {
+        "coef": 8,
+        "result": {
+            "avgNumberOfBlocks": 1.0,
+            "avgEarsPerBlock": 21.0,
+            "avgEarSize": 2.3333333333,
+            "maxBlock": 21,
+            "maxEar": 3
+        },
+        "timePerTest": 0.000203176
+    },
+    {
+        "coef": 9,
+        "result": {
+            "avgNumberOfBlocks": 1.0,
+            "avgEarsPerBlock": 28.0,
+            "avgEarSize": 2.2857142857,
+            "maxBlock": 28,
+            "maxEar": 3
+        },
+        "timePerTest": 0.000694168
+    },
+    {
+        "coef": 10,
+        "result": {
+            "avgNumberOfBlocks": 1.0,
+            "avgEarsPerBlock": 36.0,
+            "avgEarSize": 2.25,
+            "maxBlock": 36,
+            "maxEar": 3
+        },
+        "timePerTest": 0.00034106
+    },
+    {
+        "coef": 11,
+        "result": {
+            "avgNumberOfBlocks": 1.0,
+            "avgEarsPerBlock": 45.0,
+            "avgEarSize": 2.2222222222,
+            "maxBlock": 45,
+            "maxEar": 3
+        },
+        "timePerTest": 0.000571451
+    },
+    {
+        "coef": 12,
+        "result": {
+            "avgNumberOfBlocks": 1.0,
+            "avgEarsPerBlock": 55.0,
+            "avgEarSize": 2.2,
+            "maxBlock": 55,
+            "maxEar": 3
+        },
+        "timePerTest": 0.000525897
+    },
+    {
+        "coef": 13,
+        "result": {
+            "avgNumberOfBlocks": 1.0,
+            "avgEarsPerBlock": 66.0,
+            "avgEarSize": 2.1818181818,
+            "maxBlock": 66,
+            "maxEar": 3
+        },
+        "timePerTest": 0.001182106
+    },
+    {
+        "coef": 14,
+        "result": {
+            "avgNumberOfBlocks": 1.0,
+            "avgEarsPerBlock": 78.0,
+            "avgEarSize": 2.1666666667,
+            "maxBlock": 78,
+            "maxEar": 3
+        },
+        "timePerTest": 0.000787095
+    },
+    {
+        "coef": 15,
+        "result": {
+            "avgNumberOfBlocks": 1.0,
+            "avgEarsPerBlock": 91.0,
+            "avgEarSize": 2.1538461538,
+            "maxBlock": 91,
+            "maxEar": 3
+        },
+        "timePerTest": 0.001152688
+    },
+    {
+        "coef": 16,
+        "result": {
+            "avgNumberOfBlocks": 1.0,
+            "avgEarsPerBlock": 105.0,
+            "avgEarSize": 2.1428571429,
+            "maxBlock": 105,
+            "maxEar": 3
+        },
+        "timePerTest": 0.001350996
+    },
+    {
+        "coef": 17,
+        "result": {
+            "avgNumberOfBlocks": 1.0,
+            "avgEarsPerBlock": 120.0,
+            "avgEarSize": 2.1333333333,
+            "maxBlock": 120,
+            "maxEar": 3
+        },
+        "timePerTest": 0.001816537
+    },
+    {
+        "coef": 18,
+        "result": {
+            "avgNumberOfBlocks": 1.0,
+            "avgEarsPerBlock": 136.0,
+            "avgEarSize": 2.125,
+            "maxBlock": 136,
+            "maxEar": 3
+        },
+        "timePerTest": 0.00196916
+    },
+    {
+        "coef": 19,
+        "result": {
+            "avgNumberOfBlocks": 1.0,
+            "avgEarsPerBlock": 153.0,
+            "avgEarSize": 2.1176470588,
+            "maxBlock": 153,
+            "maxEar": 3
+        },
+        "timePerTest": 0.00220719
+    },
+    {
+        "coef": 20,
+        "result": {
+            "avgNumberOfBlocks": 1.0,
+            "avgEarsPerBlock": 171.0,
+            "avgEarSize": 2.1111111111,
+            "maxBlock": 171,
+            "maxEar": 3
+        },
+        "timePerTest": 0.002309689
+    },
+    {
+        "coef": 21,
+        "result": {
+            "avgNumberOfBlocks": 1.0,
+            "avgEarsPerBlock": 190.0,
+            "avgEarSize": 2.1052631579,
+            "maxBlock": 190,
+            "maxEar": 3
+        },
+        "timePerTest": 0.002634136
+    },
+    {
+        "coef": 22,
+        "result": {
+            "avgNumberOfBlocks": 1.0,
+            "avgEarsPerBlock": 210.0,
+            "avgEarSize": 2.1,
+            "maxBlock": 210,
+            "maxEar": 3
+        },
+        "timePerTest": 0.00303702
+    },
+    {
+        "coef": 23,
+        "result": {
+            "avgNumberOfBlocks": 1.0,
+            "avgEarsPerBlock": 231.0,
+            "avgEarSize": 2.0952380952,
+            "maxBlock": 231,
+            "maxEar": 3
+        },
+        "timePerTest": 0.00344975
+    },
+    {
+        "coef": 24,
+        "result": {
+            "avgNumberOfBlocks": 1.0,
+            "avgEarsPerBlock": 253.0,
+            "avgEarSize": 2.0909090909,
+            "maxBlock": 253,
+            "maxEar": 3
+        },
+        "timePerTest": 0.00388627
+    },
+    {
+        "coef": 25,
+        "result": {
+            "avgNumberOfBlocks": 1.0,
+            "avgEarsPerBlock": 276.0,
+            "avgEarSize": 2.0869565217,
+            "maxBlock": 276,
+            "maxEar": 3
+        },
+        "timePerTest": 0.004493315
+    },
+    {
+        "coef": 26,
+        "result": {
+            "avgNumberOfBlocks": 1.0,
+            "avgEarsPerBlock": 300.0,
+            "avgEarSize": 2.0833333333,
+            "maxBlock": 300,
+            "maxEar": 3
+        },
+        "timePerTest": 0.004979069
+    },
+    {
+        "coef": 27,
+        "result": {
+            "avgNumberOfBlocks": 1.0,
+            "avgEarsPerBlock": 325.0,
+            "avgEarSize": 2.08,
+            "maxBlock": 325,
+            "maxEar": 3
+        },
+        "timePerTest": 0.005900058
+    },
+    {
+        "coef": 28,
+        "result": {
+            "avgNumberOfBlocks": 1.0,
+            "avgEarsPerBlock": 351.0,
+            "avgEarSize": 2.0769230769,
+            "maxBlock": 351,
+            "maxEar": 3
+        },
+        "timePerTest": 0.007480192
+    },
+    {
+        "coef": 29,
+        "result": {
+            "avgNumberOfBlocks": 1.0,
+            "avgEarsPerBlock": 378.0,
+            "avgEarSize": 2.0740740741,
+            "maxBlock": 378,
+            "maxEar": 3
+        },
+        "timePerTest": 0.007947784
+    },
+    {
+        "coef": 30,
+        "result": {
+            "avgNumberOfBlocks": 1.0,
+            "avgEarsPerBlock": 406.0,
+            "avgEarSize": 2.0714285714,
+            "maxBlock": 406,
+            "maxEar": 3
+        },
+        "timePerTest": 0.009489032
+    },
+    {
+        "coef": 31,
+        "result": {
+            "avgNumberOfBlocks": 1.0,
+            "avgEarsPerBlock": 435.0,
+            "avgEarSize": 2.0689655172,
+            "maxBlock": 435,
+            "maxEar": 3
+        },
+        "timePerTest": 0.010489726
+    },
+    {
+        "coef": 32,
+        "result": {
+            "avgNumberOfBlocks": 1.0,
+            "avgEarsPerBlock": 465.0,
+            "avgEarSize": 2.0666666667,
+            "maxBlock": 465,
+            "maxEar": 3
+        },
+        "timePerTest": 0.011463888
+    },
+    {
+        "coef": 33,
+        "result": {
+            "avgNumberOfBlocks": 1.0,
+            "avgEarsPerBlock": 496.0,
+            "avgEarSize": 2.064516129,
+            "maxBlock": 496,
+            "maxEar": 3
+        },
+        "timePerTest": 0.013209112
+    },
+    {
+        "coef": 34,
+        "result": {
+            "avgNumberOfBlocks": 1.0,
+            "avgEarsPerBlock": 528.0,
+            "avgEarSize": 2.0625,
+            "maxBlock": 528,
+            "maxEar": 3
+        },
+        "timePerTest": 0.01423904
+    },
+    {
+        "coef": 35,
+        "result": {
+            "avgNumberOfBlocks": 1.0,
+            "avgEarsPerBlock": 561.0,
+            "avgEarSize": 2.0606060606,
+            "maxBlock": 561,
+            "maxEar": 3
+        },
+        "timePerTest": 0.015811613
+    },
+    {
+        "coef": 36,
+        "result": {
+            "avgNumberOfBlocks": 1.0,
+            "avgEarsPerBlock": 595.0,
+            "avgEarSize": 2.0588235294,
+            "maxBlock": 595,
+            "maxEar": 3
+        },
+        "timePerTest": 0.01747989
+    },
+    {
+        "coef": 37,
+        "result": {
+            "avgNumberOfBlocks": 1.0,
+            "avgEarsPerBlock": 630.0,
+            "avgEarSize": 2.0571428571,
+            "maxBlock": 630,
+            "maxEar": 3
+        },
+        "timePerTest": 0.019054586
+    },
+    {
+        "coef": 38,
+        "result": {
+            "avgNumberOfBlocks": 1.0,
+            "avgEarsPerBlock": 666.0,
+            "avgEarSize": 2.0555555556,
+            "maxBlock": 666,
+            "maxEar": 3
+        },
+        "timePerTest": 0.02117197
+    },
+    {
+        "coef": 39,
+        "result": {
+            "avgNumberOfBlocks": 1.0,
+            "avgEarsPerBlock": 703.0,
+            "avgEarSize": 2.0540540541,
+            "maxBlock": 703,
+            "maxEar": 3
+        },
+        "timePerTest": 0.023187645
+    },
+    {
+        "coef": 40,
+        "result": {
+            "avgNumberOfBlocks": 1.0,
+            "avgEarsPerBlock": 741.0,
+            "avgEarSize": 2.0526315789,
+            "maxBlock": 741,
+            "maxEar": 3
+        },
+        "timePerTest": 0.025424437
+    },
+    {
+        "coef": 41,
+        "result": {
+            "avgNumberOfBlocks": 1.0,
+            "avgEarsPerBlock": 780.0,
+            "avgEarSize": 2.0512820513,
+            "maxBlock": 780,
+            "maxEar": 3
+        },
+        "timePerTest": 0.027858019
+    },
+    {
+        "coef": 42,
+        "result": {
+            "avgNumberOfBlocks": 1.0,
+            "avgEarsPerBlock": 820.0,
+            "avgEarSize": 2.05,
+            "maxBlock": 820,
+            "maxEar": 3
+        },
+        "timePerTest": 0.030663681
+    },
+    {
+        "coef": 43,
+        "result": {
+            "avgNumberOfBlocks": 1.0,
+            "avgEarsPerBlock": 861.0,
+            "avgEarSize": 2.0487804878,
+            "maxBlock": 861,
+            "maxEar": 3
+        },
+        "timePerTest": 0.033584563
+    },
+    {
+        "coef": 44,
+        "result": {
+            "avgNumberOfBlocks": 1.0,
+            "avgEarsPerBlock": 903.0,
+            "avgEarSize": 2.0476190476,
+            "maxBlock": 903,
+            "maxEar": 3
+        },
+        "timePerTest": 0.03671072
+    },
+    {
+        "coef": 45,
+        "result": {
+            "avgNumberOfBlocks": 1.0,
+            "avgEarsPerBlock": 946.0,
+            "avgEarSize": 2.0465116279,
+            "maxBlock": 946,
+            "maxEar": 3
+        },
+        "timePerTest": 0.039857248
+    },
+    {
+        "coef": 46,
+        "result": {
+            "avgNumberOfBlocks": 1.0,
+            "avgEarsPerBlock": 990.0,
+            "avgEarSize": 2.0454545455,
+            "maxBlock": 990,
+            "maxEar": 3
+        },
+        "timePerTest": 0.043504219
+    },
+    {
+        "coef": 47,
+        "result": {
+            "avgNumberOfBlocks": 1.0,
+            "avgEarsPerBlock": 1035.0,
+            "avgEarSize": 2.0444444444,
+            "maxBlock": 1035,
+            "maxEar": 3
+        },
+        "timePerTest": 0.047655221
+    },
+    {
+        "coef": 48,
+        "result": {
+            "avgNumberOfBlocks": 1.0,
+            "avgEarsPerBlock": 1081.0,
+            "avgEarSize": 2.0434782609,
+            "maxBlock": 1081,
+            "maxEar": 3
+        },
+        "timePerTest": 0.051343844
+    },
+    {
+        "coef": 49,
+        "result": {
+            "avgNumberOfBlocks": 1.0,
+            "avgEarsPerBlock": 1128.0,
+            "avgEarSize": 2.0425531915,
+            "maxBlock": 1128,
+            "maxEar": 3
+        },
+        "timePerTest": 0.057914977
+    },
+    {
+        "coef": 50,
+        "result": {
+            "avgNumberOfBlocks": 1.0,
+            "avgEarsPerBlock": 1176.0,
+            "avgEarSize": 2.0416666667,
+            "maxBlock": 1176,
+            "maxEar": 3
+        },
+        "timePerTest": 0.059657965
+    },
+    {
+        "coef": 51,
+        "result": {
+            "avgNumberOfBlocks": 1.0,
+            "avgEarsPerBlock": 1225.0,
+            "avgEarSize": 2.0408163265,
+            "maxBlock": 1225,
+            "maxEar": 3
+        },
+        "timePerTest": 0.065260516
+    },
+    {
+        "coef": 52,
+        "result": {
+            "avgNumberOfBlocks": 1.0,
+            "avgEarsPerBlock": 1275.0,
+            "avgEarSize": 2.04,
+            "maxBlock": 1275,
+            "maxEar": 3
+        },
+        "timePerTest": 0.070810141
+    },
+    {
+        "coef": 53,
+        "result": {
+            "avgNumberOfBlocks": 1.0,
+            "avgEarsPerBlock": 1326.0,
+            "avgEarSize": 2.0392156863,
+            "maxBlock": 1326,
+            "maxEar": 3
+        },
+        "timePerTest": 0.075651469
+    },
+    {
+        "coef": 54,
+        "result": {
+            "avgNumberOfBlocks": 1.0,
+            "avgEarsPerBlock": 1378.0,
+            "avgEarSize": 2.0384615385,
+            "maxBlock": 1378,
+            "maxEar": 3
+        },
+        "timePerTest": 0.081482353
+    },
+    {
+        "coef": 55,
+        "result": {
+            "avgNumberOfBlocks": 1.0,
+            "avgEarsPerBlock": 1431.0,
+            "avgEarSize": 2.0377358491,
+            "maxBlock": 1431,
+            "maxEar": 3
+        },
+        "timePerTest": 0.094710635
+    },
+    {
+        "coef": 56,
+        "result": {
+            "avgNumberOfBlocks": 1.0,
+            "avgEarsPerBlock": 1485.0,
+            "avgEarSize": 2.037037037,
+            "maxBlock": 1485,
+            "maxEar": 3
+        },
+        "timePerTest": 0.097507523
+    },
+    {
+        "coef": 57,
+        "result": {
+            "avgNumberOfBlocks": 1.0,
+            "avgEarsPerBlock": 1540.0,
+            "avgEarSize": 2.0363636364,
+            "maxBlock": 1540,
+            "maxEar": 3
+        },
+        "timePerTest": 0.105435286
+    },
+    {
+        "coef": 58,
+        "result": {
+            "avgNumberOfBlocks": 1.0,
+            "avgEarsPerBlock": 1596.0,
+            "avgEarSize": 2.0357142857,
+            "maxBlock": 1596,
+            "maxEar": 3
+        },
+        "timePerTest": 0.119967175
+    },
+    {
+        "coef": 59,
+        "result": {
+            "avgNumberOfBlocks": 1.0,
+            "avgEarsPerBlock": 1653.0,
+            "avgEarSize": 2.0350877193,
+            "maxBlock": 1653,
+            "maxEar": 3
+        },
+        "timePerTest": 0.12430956
+    },
+    {
+        "coef": 60,
+        "result": {
+            "avgNumberOfBlocks": 1.0,
+            "avgEarsPerBlock": 1711.0,
+            "avgEarSize": 2.0344827586,
+            "maxBlock": 1711,
+            "maxEar": 3
+        },
+        "timePerTest": 0.12928014
+    },
+    {
+        "coef": 61,
+        "result": {
+            "avgNumberOfBlocks": 1.0,
+            "avgEarsPerBlock": 1770.0,
+            "avgEarSize": 2.0338983051,
+            "maxBlock": 1770,
+            "maxEar": 3
+        },
+        "timePerTest": 0.132826307
+    },
+    {
+        "coef": 62,
+        "result": {
+            "avgNumberOfBlocks": 1.0,
+            "avgEarsPerBlock": 1830.0,
+            "avgEarSize": 2.0333333333,
+            "maxBlock": 1830,
+            "maxEar": 3
+        },
+        "timePerTest": 0.140671278
+    },
+    {
+        "coef": 63,
+        "result": {
+            "avgNumberOfBlocks": 1.0,
+            "avgEarsPerBlock": 1891.0,
+            "avgEarSize": 2.0327868852,
+            "maxBlock": 1891,
+            "maxEar": 3
+        },
+        "timePerTest": 0.17778279
+    },
+    {
+        "coef": 64,
+        "result": {
+            "avgNumberOfBlocks": 1.0,
+            "avgEarsPerBlock": 1953.0,
+            "avgEarSize": 2.0322580645,
+            "maxBlock": 1953,
+            "maxEar": 3
+        },
+        "timePerTest": 0.179064623
+    },
+    {
+        "coef": 65,
+        "result": {
+            "avgNumberOfBlocks": 1.0,
+            "avgEarsPerBlock": 2016.0,
+            "avgEarSize": 2.0317460317,
+            "maxBlock": 2016,
+            "maxEar": 3
+        },
+        "timePerTest": 0.173939419
+    },
+    {
+        "coef": 66,
+        "result": {
+            "avgNumberOfBlocks": 1.0,
+            "avgEarsPerBlock": 2080.0,
+            "avgEarSize": 2.03125,
+            "maxBlock": 2080,
+            "maxEar": 3
+        },
+        "timePerTest": 0.192193035
+    },
+    {
+        "coef": 67,
+        "result": {
+            "avgNumberOfBlocks": 1.0,
+            "avgEarsPerBlock": 2145.0,
+            "avgEarSize": 2.0307692308,
+            "maxBlock": 2145,
+            "maxEar": 3
+        },
+        "timePerTest": 0.214987638
+    },
+    {
+        "coef": 68,
+        "result": {
+            "avgNumberOfBlocks": 1.0,
+            "avgEarsPerBlock": 2211.0,
+            "avgEarSize": 2.0303030303,
+            "maxBlock": 2211,
+            "maxEar": 3
+        },
+        "timePerTest": 0.222072786
+    },
+    {
+        "coef": 69,
+        "result": {
+            "avgNumberOfBlocks": 1.0,
+            "avgEarsPerBlock": 2278.0,
+            "avgEarSize": 2.0298507463,
+            "maxBlock": 2278,
+            "maxEar": 3
+        },
+        "timePerTest": 0.215964355
+    },
+    {
+        "coef": 70,
+        "result": {
+            "avgNumberOfBlocks": 1.0,
+            "avgEarsPerBlock": 2346.0,
+            "avgEarSize": 2.0294117647,
+            "maxBlock": 2346,
+            "maxEar": 3
+        },
+        "timePerTest": 0.262459508
+    },
+    {
+        "coef": 71,
+        "result": {
+            "avgNumberOfBlocks": 1.0,
+            "avgEarsPerBlock": 2415.0,
+            "avgEarSize": 2.0289855072,
+            "maxBlock": 2415,
+            "maxEar": 3
+        },
+        "timePerTest": 0.262825333
+    },
+    {
+        "coef": 72,
+        "result": {
+            "avgNumberOfBlocks": 1.0,
+            "avgEarsPerBlock": 2485.0,
+            "avgEarSize": 2.0285714286,
+            "maxBlock": 2485,
+            "maxEar": 3
+        },
+        "timePerTest": 0.270535361
+    },
+    {
+        "coef": 73,
+        "result": {
+            "avgNumberOfBlocks": 1.0,
+            "avgEarsPerBlock": 2556.0,
+            "avgEarSize": 2.0281690141,
+            "maxBlock": 2556,
+            "maxEar": 3
+        },
+        "timePerTest": 0.286277392
+    },
+    {
+        "coef": 74,
+        "result": {
+            "avgNumberOfBlocks": 1.0,
+            "avgEarsPerBlock": 2628.0,
+            "avgEarSize": 2.0277777778,
+            "maxBlock": 2628,
+            "maxEar": 3
+        },
+        "timePerTest": 0.298600359
+    },
+    {
+        "coef": 75,
+        "result": {
+            "avgNumberOfBlocks": 1.0,
+            "avgEarsPerBlock": 2701.0,
+            "avgEarSize": 2.0273972603,
+            "maxBlock": 2701,
+            "maxEar": 3
+        },
+        "timePerTest": 0.302310336
+    },
+    {
+        "coef": 76,
+        "result": {
+            "avgNumberOfBlocks": 1.0,
+            "avgEarsPerBlock": 2775.0,
+            "avgEarSize": 2.027027027,
+            "maxBlock": 2775,
+            "maxEar": 3
+        },
+        "timePerTest": 0.33281274
+    },
+    {
+        "coef": 77,
+        "result": {
+            "avgNumberOfBlocks": 1.0,
+            "avgEarsPerBlock": 2850.0,
+            "avgEarSize": 2.0266666667,
+            "maxBlock": 2850,
+            "maxEar": 3
+        },
+        "timePerTest": 0.347413812
+    },
+    {
+        "coef": 78,
+        "result": {
+            "avgNumberOfBlocks": 1.0,
+            "avgEarsPerBlock": 2926.0,
+            "avgEarSize": 2.0263157895,
+            "maxBlock": 2926,
+            "maxEar": 3
+        },
+        "timePerTest": 0.396549063
+    },
+    {
+        "coef": 79,
+        "result": {
+            "avgNumberOfBlocks": 1.0,
+            "avgEarsPerBlock": 3003.0,
+            "avgEarSize": 2.025974026,
+            "maxBlock": 3003,
+            "maxEar": 3
+        },
+        "timePerTest": 0.379190492
+    },
+    {
+        "coef": 80,
+        "result": {
+            "avgNumberOfBlocks": 1.0,
+            "avgEarsPerBlock": 3081.0,
+            "avgEarSize": 2.0256410256,
+            "maxBlock": 3081,
+            "maxEar": 3
+        },
+        "timePerTest": 0.396326606
+    },
+    {
+        "coef": 81,
+        "result": {
+            "avgNumberOfBlocks": 1.0,
+            "avgEarsPerBlock": 3160.0,
+            "avgEarSize": 2.0253164557,
+            "maxBlock": 3160,
+            "maxEar": 3
+        },
+        "timePerTest": 0.439365271
+    },
+    {
+        "coef": 82,
+        "result": {
+            "avgNumberOfBlocks": 1.0,
+            "avgEarsPerBlock": 3240.0,
+            "avgEarSize": 2.025,
+            "maxBlock": 3240,
+            "maxEar": 3
+        },
+        "timePerTest": 0.483898485
+    },
+    {
+        "coef": 83,
+        "result": {
+            "avgNumberOfBlocks": 1.0,
+            "avgEarsPerBlock": 3321.0,
+            "avgEarSize": 2.024691358,
+            "maxBlock": 3321,
+            "maxEar": 3
+        },
+        "timePerTest": 0.46868701
+    },
+    {
+        "coef": 84,
+        "result": {
+            "avgNumberOfBlocks": 1.0,
+            "avgEarsPerBlock": 3403.0,
+            "avgEarSize": 2.0243902439,
+            "maxBlock": 3403,
+            "maxEar": 3
+        },
+        "timePerTest": 0.511555597
+    },
+    {
+        "coef": 85,
+        "result": {
+            "avgNumberOfBlocks": 1.0,
+            "avgEarsPerBlock": 3486.0,
+            "avgEarSize": 2.0240963855,
+            "maxBlock": 3486,
+            "maxEar": 3
+        },
+        "timePerTest": 0.575504486
+    },
+    {
+        "coef": 86,
+        "result": {
+            "avgNumberOfBlocks": 1.0,
+            "avgEarsPerBlock": 3570.0,
+            "avgEarSize": 2.0238095238,
+            "maxBlock": 3570,
+            "maxEar": 3
+        },
+        "timePerTest": 0.619195193
+    },
+    {
+        "coef": 87,
+        "result": {
+            "avgNumberOfBlocks": 1.0,
+            "avgEarsPerBlock": 3655.0,
+            "avgEarSize": 2.0235294118,
+            "maxBlock": 3655,
+            "maxEar": 3
+        },
+        "timePerTest": 0.641817582
+    },
+    {
+        "coef": 88,
+        "result": {
+            "avgNumberOfBlocks": 1.0,
+            "avgEarsPerBlock": 3741.0,
+            "avgEarSize": 2.023255814,
+            "maxBlock": 3741,
+            "maxEar": 3
+        },
+        "timePerTest": 0.623591994
+    },
+    {
+        "coef": 89,
+        "result": {
+            "avgNumberOfBlocks": 1.0,
+            "avgEarsPerBlock": 3828.0,
+            "avgEarSize": 2.0229885057,
+            "maxBlock": 3828,
+            "maxEar": 3
+        },
+        "timePerTest": 0.623646278
+    },
+    {
+        "coef": 90,
+        "result": {
+            "avgNumberOfBlocks": 1.0,
+            "avgEarsPerBlock": 3916.0,
+            "avgEarSize": 2.0227272727,
+            "maxBlock": 3916,
+            "maxEar": 3
+        },
+        "timePerTest": 0.687062449
+    },
+    {
+        "coef": 91,
+        "result": {
+            "avgNumberOfBlocks": 1.0,
+            "avgEarsPerBlock": 4005.0,
+            "avgEarSize": 2.0224719101,
+            "maxBlock": 4005,
+            "maxEar": 3
+        },
+        "timePerTest": 0.719955432
+    },
+    {
+        "coef": 92,
+        "result": {
+            "avgNumberOfBlocks": 1.0,
+            "avgEarsPerBlock": 4095.0,
+            "avgEarSize": 2.0222222222,
+            "maxBlock": 4095,
+            "maxEar": 3
+        },
+        "timePerTest": 0.753024714
+    },
+    {
+        "coef": 93,
+        "result": {
+            "avgNumberOfBlocks": 1.0,
+            "avgEarsPerBlock": 4186.0,
+            "avgEarSize": 2.021978022,
+            "maxBlock": 4186,
+            "maxEar": 3
+        },
+        "timePerTest": 0.796091806
+    },
+    {
+        "coef": 94,
+        "result": {
+            "avgNumberOfBlocks": 1.0,
+            "avgEarsPerBlock": 4278.0,
+            "avgEarSize": 2.0217391304,
+            "maxBlock": 4278,
+            "maxEar": 3
+        },
+        "timePerTest": 0.816571794
+    },
+    {
+        "coef": 95,
+        "result": {
+            "avgNumberOfBlocks": 1.0,
+            "avgEarsPerBlock": 4371.0,
+            "avgEarSize": 2.0215053763,
+            "maxBlock": 4371,
+            "maxEar": 3
+        },
+        "timePerTest": 0.848850137
+    },
+    {
+        "coef": 96,
+        "result": {
+            "avgNumberOfBlocks": 1.0,
+            "avgEarsPerBlock": 4465.0,
+            "avgEarSize": 2.0212765957,
+            "maxBlock": 4465,
+            "maxEar": 3
+        },
+        "timePerTest": 0.896486302
+    },
+    {
+        "coef": 97,
+        "result": {
+            "avgNumberOfBlocks": 1.0,
+            "avgEarsPerBlock": 4560.0,
+            "avgEarSize": 2.0210526316,
+            "maxBlock": 4560,
+            "maxEar": 3
+        },
+        "timePerTest": 0.932138192
+    },
+    {
+        "coef": 98,
+        "result": {
+            "avgNumberOfBlocks": 1.0,
+            "avgEarsPerBlock": 4656.0,
+            "avgEarSize": 2.0208333333,
+            "maxBlock": 4656,
+            "maxEar": 3
+        },
+        "timePerTest": 0.996944806
+    },
+    {
+        "coef": 99,
+        "result": {
+            "avgNumberOfBlocks": 1.0,
+            "avgEarsPerBlock": 4753.0,
+            "avgEarSize": 2.0206185567,
+            "maxBlock": 4753,
+            "maxEar": 3
+        },
+        "timePerTest": 1.016120471
+    },
+    {
+        "coef": 100,
+        "result": {
+            "avgNumberOfBlocks": 1.0,
+            "avgEarsPerBlock": 4851.0,
+            "avgEarSize": 2.0204081633,
+            "maxBlock": 4851,
+            "maxEar": 3
+        },
+        "timePerTest": 1.069832408
+    }
+]

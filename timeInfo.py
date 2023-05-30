@@ -22,12 +22,14 @@ def withTimer(func: Callable):
 
 
 class TimeInfoOptions:
-    def __init__(self, start: float, end: float, delta: float, numberOfTests: int, filename: str, argumentsGenerator: Callable[..., List]):
+    def __init__(self, start: float, end: float, delta: float, numberOfTests: int, filename: str, argumentsGenerator: Callable[..., List], saveAll=False, resultGenerator: Callable[..., List] = lambda x: x):
         self.coeficient = [
             i * delta for i in range(int(end/delta) + 1) if i * delta >= start]
         self.numberOfTests = numberOfTests
         self.filename = filename
         self.argumentsGenerator = argumentsGenerator
+        self.saveAll = saveAll
+        self.resultGenerator = resultGenerator
 
 
 # Calculates function execution time, prints progress, saves results to csv file, predicts time left till end of investigation
@@ -41,15 +43,26 @@ def withTimeInfo(func: Callable):
 
         for i, coef in enumerate(options.coeficient):
             totalTime = 0
+            testsResults = []
             for _ in range(options.numberOfTests):
                 arguments = options.argumentsGenerator(coef, *args, **kwargs)
                 result, delta = functionWithTimer(*arguments)
+                testsResults.append(result)
                 totalTime += delta
-            results.append({
-                'coef': coef,
-                'result': result,
-                'time': totalTime / options.numberOfTests
-            })
+                if (options.saveAll):
+                    result = options.resultGenerator(result)
+                    results.append({
+                        'coef': coef,
+                        'result': result,
+                        'time': delta
+                    })
+            if (not options.saveAll):
+                testsResults = options.resultGenerator(testsResults)
+                results.append({
+                    'coef': coef,
+                    'result': testsResults,
+                    'timePerTest': totalTime / options.numberOfTests
+                })
 
             # Calculate time left till end of investigation
             timePerTest = totalTime / options.numberOfTests
@@ -66,13 +79,14 @@ def withTimeInfo(func: Callable):
                 for n in range(i+1, len(options.coeficient)):
                     timeLeft += totalTime * currentGrowth
                     currentGrowth *= averageGrowth
-                print(f"Time left: " + (str(timedelta(seconds=timeLeft)) if timeLeft < 1e14 else "Too long"))
+                print(f"Time left: " + (str(timedelta(seconds=timeLeft))
+                      if timeLeft < 1e14 else "Too long"))
 
             print(
                 f"Time elapsed: {str(timedelta(seconds=(time.perf_counter_ns() - investigationStart)/1e9))} seconds")
             print(
                 f"Completed: {round(100 * (i+1)/len(options.coeficient))}%\n")
         # Export to csv
-        pd.DataFrame(results).to_csv(utils.getPath(options.filename + '-' +
-                                                   str(datetime.now().strftime("%Y%m%d%H%M%S")) + '.csv'), index=False)
+        pd.DataFrame(results).to_json(utils.getPath(options.filename + '-' +
+                                                    str(datetime.now().strftime("%Y%m%d%H%M%S")) + '.json'), orient='records')
     return wrapper

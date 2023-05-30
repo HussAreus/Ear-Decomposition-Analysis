@@ -1,0 +1,14 @@
+Density-20230530192239: 
+    Edge probability: Range(0 to 1, delta 0.01)
+    Graph size: 75
+    Number Of Tests: 100
+
+Size-20230530195828:
+    Edge probability: 0.2
+    Graph size: Range(1, 150, delta 1)
+    Number Of Tests: 100
+
+Complete-20230530203539:
+    Edge probability: 1
+    Graph size: Range(1, 100, delta 1)
+    Number Of Tests: 100

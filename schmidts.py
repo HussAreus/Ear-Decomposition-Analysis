@@ -1,6 +1,7 @@
 import networkx as nx
 from typing import List
 
+
 def dfs(graph: nx.Graph, root: any):
     dfsTree = nx.DiGraph()
     dfsTree.add_nodes_from(graph)
@@ -58,3 +59,42 @@ def earDecomposition(graph: nx.Graph):
                 block.append(ear)
         blockList.append(block)
     return blockList
+
+
+# Gives information about the graphs ear decomposition
+def generateResult(results):
+    totalBlocks = 0
+    maxBlock = 0
+    totalEars = 0
+    totalEarLen = 0
+    maxEar = 0
+    for result in results:
+        totalBlocks += len(result)
+        for block in result:
+            totalEars += len(block)
+            maxBlock = max(maxBlock, len(block))
+            for ear in block:
+                totalEarLen += len(ear)
+                earSize = len(ear)
+                if ear[0] == ear[-1]:
+                    earSize -= 1
+                maxEar = max(maxEar, earSize)
+
+    if len(results) == 0 or totalBlocks == 0 or totalEars == 0:
+        return {
+            "avgNumberOfBlocks": 0,
+            "avgEarsPerBlock": 0,
+            "avgEarSize": 0,
+            "maxBlock": 0,
+            "maxEar": 0
+        }
+    avgNumberOfBlocks = totalBlocks / len(results)
+    avgEarsPerBlock = totalEars / totalBlocks
+    avgEarSize = totalEarLen / totalEars
+    return {
+        "avgNumberOfBlocks": avgNumberOfBlocks,
+        "avgEarsPerBlock": avgEarsPerBlock,
+        "avgEarSize": avgEarSize,
+        "maxBlock": maxBlock,
+        "maxEar": maxEar
+    }
