@@ -1,3 +1,0 @@
-regular-20230527191229: d = 10
-regular-20230527192436: d = 20
-differentDensity-20230530002825: N = 75, NoT = 100, 
