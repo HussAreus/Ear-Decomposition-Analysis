@@ -1,7 +1,7 @@
 # Ear-Decomposition-Analysis
 Analysis of the Schmidt's (2013b) algorithm for finding Ear (Chain) decomposition of a graph and checking its connectivity
 
-##Ear Decomposition algorithm
+## Ear Decomposition algorithm
 Steps:
 1. Go through each unvisited node (visit it), start the Block with it.
   2. Find DFS tree from that node
@@ -17,14 +17,14 @@ Steps:
 10. When all nodes are visited return the block list
 
 
-##Analysis
+## Analysis
 * Time efficiency with different graph scale
 * Time efficiency with different graph type
 * Time efficiency with different edge density
 * Time efficiency compared to other block finding algorithms
 
 
-##Sources
+## Sources
 Author: ramchandra (2020)
 https://codeforces.com/blog/entry/80932
 
@@ -32,5 +32,5 @@ Author: Jens M. Schmidt (2019)
 https://arxiv.org/ftp/arxiv/papers/1209/1209.0700.pdf
 
 
-##Run it online
+## Run it online
 https://colab.research.google.com/drive/1tnwNdPF2X5UZlzxnf1AgTHC3ccmBX0sl?usp=sharing
